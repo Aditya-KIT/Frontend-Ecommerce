@@ -1,21 +1,35 @@
-# Dynamic Multi-Category Catalog
+## 🚀 Tech Stack & Frameworks
 
-I built this assignment using Next.js, TypeScript, and Tailwind CSS. The application dynamically renders a multi-category catalog from JSON data. Items are grouped by category on the home page, and each item has a dedicated detail page.
+This project is built using modern web development technologies, focusing on a premium aesthetic, fluid animations, and high performance:
 
-The main approach was to avoid hardcoding category-specific fields. Instead, the app iterates through the itemprops array and displays all available properties dynamically. This makes the application scalable for different categories like cars, bikes, phones, and computers.
+*   **Next.js (App Router):** Core React framework utilized for Server-Side Rendering (SSR) and optimized routing.
+*   **React 19:** Building block for creating reusable and highly interactive UI components.
+*   **TypeScript:** Used for strict static typing, ensuring code quality, reliability, and better developer experience.
+*   **Tailwind CSS (v4):** Utility-first CSS framework employed for rapid, responsive styling and building out custom dark mode layouts.
+*   **Framer Motion:** Powerful animation library used to implement smooth page transitions, scroll-based storytelling, and interactive micro-animations.
+*   **Firebase Analytics:** Integrated for powerful, real-time user tracking and interaction analytics.
 
-The layout is fully responsive and works smoothly on mobile, tablet, and desktop screens. The assignment took approximately 4–5 hours to complete, including UI design, routing, dynamic rendering, and testing.
+## ✨ Key Features & UI Highlights
 
-## Running the Project
+*   **Parallax & Scroll Effects:** Highly immersive scrolling experiences featuring dynamic parallax background layers and elements that reveal themselves seamlessly as the user scrolls down the page.
+*   **Dynamic Product Catalog:** Robust rendering of complex product datasets (Cars, Bikes, Mobiles, Laptops) directly from JSON into dynamically organized categories.
+*   **Premium Dark Theme UI:** Carefully curated dark aesthetic featuring vibrant animated background blobs and custom modern typography.
+*   **Glassmorphism Design:** Modern frosted-glass effects applied to navigation bars and product cards for a sleek, high-end feel.
+*   **Advanced Interactive Elements:** 
+    *   Hero Image Sliders
+    *   Infinite Category Marquees
+    *   Zoomable Product Images 
+    *   Hover-triggered micro-animations for enhanced user engagement.
 
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
+## 🛠️ Getting Started
 
-2. Run the development server:
-   ```bash
-   npm run dev
-   ```
+To run the project locally, ensure you have the dependencies installed and start the development server. 
 
-3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+By default, the Next.js application runs on **Port 3000**. 
+
+```bash
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
