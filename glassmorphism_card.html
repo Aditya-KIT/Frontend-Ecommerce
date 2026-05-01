@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>High-Fidelity Product Showcase</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#908fa0",
+                        "on-secondary-container": "#b2b3f2",
+                        "secondary": "#c0c1ff",
+                        "on-tertiary-container": "#452000",
+                        "background": "#13131b",
+                        "on-error-container": "#ffdad6",
+                        "tertiary-container": "#d97721",
+                        "surface-container-high": "#292932",
+                        "on-primary": "#1000a9",
+                        "surface-container-low": "#1b1b23",
+                        "primary-fixed-dim": "#c0c1ff",
+                        "surface-tint": "#c0c1ff",
+                        "secondary-fixed-dim": "#c0c1ff",
+                        "on-secondary": "#292a60",
+                        "tertiary": "#ffb783",
+                        "on-primary-fixed-variant": "#2f2ebe",
+                        "surface-variant": "#34343d",
+                        "surface-bright": "#393841",
+                        "secondary-fixed": "#e1e0ff",
+                        "on-tertiary-fixed": "#301400",
+                        "on-surface": "#e4e1ed",
+                        "tertiary-fixed": "#ffdcc5",
+                        "surface-container-lowest": "#0d0d15",
+                        "secondary-container": "#42447b",
+                        "surface-dim": "#13131b",
+                        "error": "#ffb4ab",
+                        "surface-container": "#1f1f27",
+                        "error-container": "#93000a",
+                        "on-error": "#690005",
+                        "on-surface-variant": "#c7c4d7",
+                        "surface-container-highest": "#34343d",
+                        "surface": "#13131b",
+                        "primary": "#c0c1ff",
+                        "outline-variant": "#464554",
+                        "inverse-surface": "#e4e1ed",
+                        "on-tertiary": "#4f2500",
+                        "on-secondary-fixed-variant": "#404178",
+                        "on-tertiary-fixed-variant": "#703700",
+                        "inverse-primary": "#494bd6",
+                        "on-primary-fixed": "#07006c",
+                        "on-primary-container": "#0d0096",
+                        "primary-container": "#8083ff",
+                        "on-background": "#e4e1ed",
+                        "inverse-on-surface": "#303038",
+                        "tertiary-fixed-dim": "#ffb783",
+                        "primary-fixed": "#e1e0ff",
+                        "on-secondary-fixed": "#13144a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "display": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body min-h-screen flex flex-col bg-gradient-to-b from-[#1e1b4b] to-background">
+<!-- TopNavBar -->
+<header class="bg-[#13131b]/80 backdrop-blur-md font-['Manrope'] antialiased docked full-width top-0 sticky z-50 border-b border-white/10 shadow-xl shadow-indigo-500/5">
+<div class="flex justify-between items-center px-8 h-20 w-full max-w-[1280px] mx-auto">
+<div class="text-2xl font-extrabold tracking-tight text-[#e4e1ed]">Ethereal Showcase</div>
+<nav class="hidden md:flex space-x-8">
+<a class="text-[#c7c4d7] hover:text-[#e4e1ed] transition-colors hover:bg-white/5 transition-all duration-300 px-3 py-2 rounded" href="#">Products</a>
+<a class="text-[#c7c4d7] hover:text-[#e4e1ed] transition-colors hover:bg-white/5 transition-all duration-300 px-3 py-2 rounded" href="#">Collections</a>
+<a class="text-[#c0c1ff] border-b-2 border-[#6366F1] pb-1 px-3 py-2 rounded" href="#">Featured</a>
+<a class="text-[#c7c4d7] hover:text-[#e4e1ed] transition-colors hover:bg-white/5 transition-all duration-300 px-3 py-2 rounded" href="#">About</a>
+</nav>
+<div class="flex items-center space-x-4">
+<button class="text-[#c0c1ff] hover:bg-white/5 transition-all duration-300 p-2 rounded-full">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="bg-primary text-on-primary px-5 py-2 rounded-lg font-semibold hover:bg-primary-fixed transition-colors">Sign In</button>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow flex flex-col items-center justify-center py-24 px-8 w-full max-w-[1280px] mx-auto relative">
+<!-- Hero Title -->
+<div class="text-center mb-16 z-10">
+<h1 class="text-display-xl font-extrabold text-white mb-4 tracking-tight drop-shadow-lg">Discover the Future</h1>
+<p class="text-body-lg text-on-surface-variant max-w-2xl mx-auto">Immerse yourself in our curated collection of next-generation technology and high-fidelity artifacts.</p>
+</div>
+<!-- Slider Container -->
+<div class="w-full relative group">
+<!-- Navigation Buttons -->
+<button class="absolute left-0 top-1/2 -translate-y-1/2 -ml-6 z-20 bg-surface-container/80 backdrop-blur border border-white/10 rounded-full p-3 text-on-surface opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-surface-bright hover:shadow-[0_0_15px_rgba(34,211,238,0.2)]">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<!-- Cards Track -->
+<div class="flex space-x-6 overflow-x-auto hide-scrollbar snap-x snap-mandatory py-8 px-4 -mx-4">
+<!-- Card 1 -->
+<div class="snap-center shrink-0 w-80 glass-card rounded-xl overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(99,102,241,0.3)] hover:border-primary/50 cursor-pointer flex flex-col group/card">
+<div class="h-64 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" data-alt="A pair of sleek, high-end noise-canceling headphones resting on a reflective obsidian surface. The lighting is moody and dramatic, with a striking neon indigo and cyan rim light outlining the curves of the headphones. The background is a deep, immersive dark void, creating a futuristic, minimalist product showcase aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-uEnFIeAfdWcpXSG08LRBNZ7kpW6gtSfR8xAePD4ixmqupqTjGYrV17iI0pSgBKAH4hOuGBKvivFBdi1zam4VVGDHdTqxFG1eiEjCCNBwkov4fBUlfghvlFXzlxzOrWJxiPtKPcTILZLdyDBe20eOcsWQhD7cIzEQet-tf6AYtIhOPDmxTMTumdDJEvWpDIvCn8MJ6_TY6hXl9lGus1FIuLGSrdBy1NCWl4CbLoCChuYNLc75aQvnc8rKlJdCwCpdfaYtEx-icdeS"/>
+<div class="absolute top-4 left-4 bg-[#A78BFA]/20 backdrop-blur-md border border-[#A78BFA]/30 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">Audio</div>
+</div>
+<div class="p-6 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="text-headline-md font-bold text-white mb-2">Sonic Void X</h3>
+<p class="text-body-md text-on-surface-variant line-clamp-2">Next-generation spatial audio with quantum noise cancellation.</p>
+</div>
+<div class="mt-4 flex justify-between items-center">
+<span class="text-primary font-bold text-lg">$499</span>
+<button class="text-secondary hover:text-white transition-colors">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="snap-center shrink-0 w-80 glass-card rounded-xl overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(99,102,241,0.3)] hover:border-primary/50 cursor-pointer flex flex-col group/card">
+<div class="h-64 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" data-alt="A close-up shot of a futuristic VR headset visor with a sleek, aerodynamic design. The visor reflects abstract, glowing cyan and indigo neon lines in a dark, tech-focused environment. The lighting creates a sense of cutting-edge technology and immersive depth, perfect for a high-end SaaS or gaming platform showcase." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhqDTB8nGA56UjsLBViDNlXsudG9yjBJ-Uu75A_bND3AQvy55T8ez2uUncB19dtBkiRjt6uqYt9ALurT2URbEPJrTLpzFZTTCU90Eg2rYAgGig2vyn1v2s0HEq6tVHz2gZ3AWJ5JAFTqtPF8qNga_b2fIikF2ECRcnscpBqsSZh-zHtO3NMLfB4Ku3kCHxo-O68fIAq3rowBhhLfqedzAsR9iLu1aUj3rXoFPlaXnOiygRGYHAYivCQlcmWGf2XNVlwAWWaLFKolnJ"/>
+<div class="absolute top-4 left-4 bg-[#A78BFA]/20 backdrop-blur-md border border-[#A78BFA]/30 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">Immersive</div>
+</div>
+<div class="p-6 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="text-headline-md font-bold text-white mb-2">Aether Visor</h3>
+<p class="text-body-md text-on-surface-variant line-clamp-2">Ultra-low latency mixed reality headset for enterprise and design.</p>
+</div>
+<div class="mt-4 flex justify-between items-center">
+<span class="text-primary font-bold text-lg">$899</span>
+<button class="text-secondary hover:text-white transition-colors">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="snap-center shrink-0 w-80 glass-card rounded-xl overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(99,102,241,0.3)] hover:border-primary/50 cursor-pointer flex flex-col group/card">
+<div class="h-64 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" data-alt="A minimalist, premium smartwatch with a sleek metallic band and a dark, borderless display showing an abstract glowing interface. The watch sits on a polished dark surface under cinematic, low-key lighting with cool indigo tones. The aesthetic conveys precision engineering and modern luxury tech." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7Y2x2k5IFAgmvGY4Wi5Xeeecg_-uV_RO39nh8l6pd3OM5kj2rGLOMYwH9AxslD65UVUU93RLwyDGM82P9QZy2J0VPoQjZRJxiX3Y5rm9jNpsRPzVRejLqVW3eTDIaC05Lh-cmYAetvFVbMGDoiPpn8KUzZLAMOI_mB8fzCuLQJ_gQxhYgnbhSG1dob7iGCh4uSRPt5WGrO9Nkee98Dm8pebXmp-BhyAA9RzNlHlFRgcFeA87pQcLTr0SldbYxAoUaB58SPXpfVxke"/>
+<div class="absolute top-4 left-4 bg-[#A78BFA]/20 backdrop-blur-md border border-[#A78BFA]/30 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">Wearable</div>
+</div>
+<div class="p-6 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="text-headline-md font-bold text-white mb-2">Chrono Core</h3>
+<p class="text-body-md text-on-surface-variant line-clamp-2">Biometric syncing and infinite battery life in a titanium chassis.</p>
+</div>
+<div class="mt-4 flex justify-between items-center">
+<span class="text-primary font-bold text-lg">$350</span>
+<button class="text-secondary hover:text-white transition-colors">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="snap-center shrink-0 w-80 glass-card rounded-xl overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(99,102,241,0.3)] hover:border-primary/50 cursor-pointer flex flex-col group/card">
+<div class="h-64 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110" data-alt="A beautifully designed modern electric vehicle concept car parked in a shadowy, minimalist studio. The car features smooth, organic curves and glowing cyan LED strip headlights. The lighting is highly stylized, using deep blacks and bright, ethereal light accents to emphasize the futuristic, high-end automotive design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD11n1kRcHId-xA_voGzl7aLz5luJje8ORIn9uRBHSp5K7r96J0yGjvQOQKIZyJtlRZfL_wVLoQiHfKg2ecf5bJvTlbfOqFWpmdE2vBKiXVyEkXkpTT4q1r-0VfGEmDPBLsQvsaqlbIHuO7W_fvWbcya6vdKElOW6QDZF9oZe5Fjmh4PuguZj49mARKrZwZDS4AgsY-iZ-u_yxVwUb0nNinzMQ14WkqMwY_Cb_Twmy_BH8Zn4Suj898xrvMfyMvwC7lOn7TAZEjZM1b"/>
+<div class="absolute top-4 left-4 bg-[#A78BFA]/20 backdrop-blur-md border border-[#A78BFA]/30 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">Mobility</div>
+</div>
+<div class="p-6 flex-grow flex flex-col justify-between">
+<div>
+<h3 class="text-headline-md font-bold text-white mb-2">Nebula GT</h3>
+<p class="text-body-md text-on-surface-variant line-clamp-2">Autonomous electric grand tourer with a zero-gravity cabin.</p>
+</div>
+<div class="mt-4 flex justify-between items-center">
+<span class="text-primary font-bold text-lg">$120k</span>
+<button class="text-secondary hover:text-white transition-colors">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Navigation Buttons -->
+<button class="absolute right-0 top-1/2 -translate-y-1/2 -mr-6 z-20 bg-surface-container/80 backdrop-blur border border-white/10 rounded-full p-3 text-on-surface opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-surface-bright hover:shadow-[0_0_15px_rgba(34,211,238,0.2)]">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+<!-- Indicators -->
+<div class="flex justify-center mt-8 space-x-2">
+<div class="w-8 h-1 rounded-full bg-primary shadow-[0_0_8px_rgba(99,102,241,0.6)]"></div>
+<div class="w-2 h-1 rounded-full bg-white/20 transition-all hover:bg-white/40 cursor-pointer"></div>
+<div class="w-2 h-1 rounded-full bg-white/20 transition-all hover:bg-white/40 cursor-pointer"></div>
+<div class="w-2 h-1 rounded-full bg-white/20 transition-all hover:bg-white/40 cursor-pointer"></div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0d0d15] font-['Manrope'] text-sm tracking-wide full-width bottom-0 border-t border-white/5 flat no shadows flex flex-col md:flex-row justify-between items-center py-12 px-10 w-full max-w-[1280px] mx-auto gap-6 z-10">
+<div class="font-bold text-[#e4e1ed] text-lg">Ethereal Dynamics</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-[#908fa0] hover:text-[#6366F1] transition-colors" href="#">Privacy Policy</a>
+<a class="text-[#908fa0] hover:text-[#6366F1] transition-colors" href="#">Terms of Service</a>
+<a class="text-[#908fa0] hover:text-[#6366F1] transition-colors" href="#">Contact</a>
+<a class="text-[#908fa0] hover:text-[#6366F1] transition-colors" href="#">Support</a>
+</div>
+<div class="text-[#908fa0]">© 2024 Ethereal Dynamics. All rights reserved.</div>
+</footer>
+</body></html>
