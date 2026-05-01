@@ -1,4 +1,10 @@
+Open the project: https://phenomenal-melomakarona-a2c54b.netlify.app/
+# Frontend-Ecommerce
+=======
+# Dynamic Multi-Category Catalog
+=======
 ## 🚀 Tech Stack & Frameworks
+>>>>>>> 3da325b (First commit)
 
 This project is built using modern web development technologies, focusing on a premium aesthetic, fluid animations, and high performance:
 
@@ -25,6 +31,10 @@ This project is built using modern web development technologies, focusing on a p
 
 To run the project locally, ensure you have the dependencies installed and start the development server. 
 
+<<<<<<< HEAD
+3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+>>>>>>> ebb5639 (Initial commit)
+=======
 By default, the Next.js application runs on **Port 3000**. 
 
 ```bash
@@ -33,3 +43,5 @@ npm install
 
 # Run the development server
 npm run dev
+>>>>>>> 3da325b (First commit)
+
